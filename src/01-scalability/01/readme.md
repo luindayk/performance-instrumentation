@@ -7,7 +7,7 @@ Passos para executar o exercício:
 docker build -f ./src/01-scalability/01/Dockerfile -t <your-user>/scalability-node-web-app .
 ```
 
-* Pull da imagem gerada
+* Pull da imagem gerada (caso não quiser gerar a própria imagem)
 ``` shell
 docker pull wluindayk/scalability-node-web-app
 ```
@@ -24,7 +24,7 @@ docker run -p 3003:3000 -d wluindayk/scalability-node-web-app
 docker build -f ./src/01-scalability/01/nginx/Dockerfile -t <your-user>/scalability-nginx-loadbalance .
 ```
 
-* Pull da imagem gerada
+* Pull da imagem gerada (caso não quiser gerar a própria imagem)
 ``` shell
 docker pull wluindayk/scalability-nginx-loadbalance
 ```
