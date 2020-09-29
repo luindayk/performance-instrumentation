@@ -14,9 +14,9 @@ docker pull wluindayk/scalability-node-web-app
 
 * Executar o container da aplicação:
 ``` shell
-docker run -p 3001:3000 -d wluindayk/scalability-node-web-app
-docker run -p 3002:3000 -d wluindayk/scalability-node-web-app
-docker run -p 3003:3000 -d wluindayk/scalability-node-web-app
+docker run -p 3001:3000 -d <your-user>/scalability-node-web-app
+docker run -p 3002:3000 -d <your-user>/scalability-node-web-app
+docker run -p 3003:3000 -d <your-user>/scalability-node-web-app
 ```
 
 2 - Build da imagem do load balancer (com nginx):
@@ -31,7 +31,7 @@ docker pull wluindayk/scalability-nginx-loadbalance
 
 * Executar o container do load balancer:
 ``` shell
-docker run -p 3000:80 wluindayk/scalability-nginx-loadbalance
+docker run -p 3000:80 <your-user>/scalability-nginx-loadbalance
 ```
 
 3 - Realizar algumas chamadas via cURL no host do load balancer:
